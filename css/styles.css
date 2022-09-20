@@ -183,6 +183,7 @@ footer {
  }
 
 
+
  /* PAGINA PRODUCTOS */
 
 .productos__titulo {
@@ -266,8 +267,7 @@ footer {
     transition: 0.5s;
 }
 
-@media (max-width:768px)
-{
+@media (max-width:768px){
 
     .productos__contenedor {
         display: grid;
@@ -286,22 +286,76 @@ footer {
     }
 }
 
-@media (max-width:480px)
-{
+@media (max-width:480px) {
 
     .productos__contenedor {
         display: grid;
-        grid-template-columns: repeat(12 , 100%);
-    }
+        grid-template-columns: repeat(12 , 100%);}
+
     .productos__contenedor-colgantes {
 
         display: grid;
-        grid-template-columns: repeat(7 , 100%);
-
-    }
+        grid-template-columns: repeat(7 , 100%)}
     
     .productos__contenedor-cortinas {
         display: grid;
         grid-template-columns: repeat(10 , 100%);
     }
+}
+
+/* PAGINA CONTACTOS */
+
+.contacto__titulo {
+text-align: center;
+font-size: 3.5rem;
+padding: 20px;
+text-decoration: underline;
+font-family: 'Pacifico', cursive;
+}
+.contenedor__contacto{
+    border: solid black 3px;
+    border-radius: 20px;
+    box-shadow: -5px 1px 50px 8px rgba(238,245,171,1);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+input{
+    border: solid 2px black;
+    font-size: 2rem;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffe4c4;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+}
+
+textarea{
+    background-color: #ffe4c4;
+    border: 2px black solid;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+form span {
+    font-size: 2.2rem;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    margin-top: 20px;
 }
