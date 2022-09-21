@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{ 
+a { 
     text-decoration: none;
 }
 
@@ -26,14 +26,14 @@ a{
     width: 100%;
  }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
     color: black;
     font-size: 1.4rem;
     font-family: 'Anton', sans-serif;
     margin: 5px;   
  }
 
- .navbar-expand-lg .navbar-nav .nav-link:hover{
+ .navbar-expand-lg .navbar-nav .nav-link:hover {
     color:SlateBlue ;
     font-size:1.5rem ;
     transition: 0.5s;
@@ -81,11 +81,11 @@ a{
     font-size: 2rem;
 }
 
-.presentacion-productos{ 
+.presentacion-productos { 
     background-color: #ffe4c4b4;
     text-align: center;
     padding: 20px;
-    
+  
 }
 
 .presentacion-productos__img {
@@ -95,14 +95,12 @@ a{
 .presentacion-productos__img:hover {
     box-shadow: 9px 7px 44px 3px rgba(0,0,0,0.69);
     transition: 1s;
-    
+  
 }
-
 
 .presentacion-productos__text { 
     font-size: 2rem;
     font-family: 'Anton', sans-serif;
-
 }
 
 /* FOOTER */
@@ -115,9 +113,9 @@ footer {
     background-color: #ffe4c4b4;
     border: solid 3px black;
 }
-.redes{
+ .redes{
     margin: 20px;
-}
+} 
 .redes__texto{
     margin: 10px;
     font-family: 'Anton', sans-serif;
@@ -168,19 +166,18 @@ footer {
     font-size: 2.5rem;
     text-align: center;
     text-decoration: underline;
-   
 }
 
-.nosotras__text p{
+.nosotras__text p {
     margin-top: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem;
     text-align: center;
 }
- .nosotras__text p span{
+.nosotras__text p span {
     color: sandybrown;
     text-decoration: underline;
- }
+}
 
 
 
@@ -358,4 +355,48 @@ form span {
 
 .formulario{
     margin-top: 20px;
+}
+
+/* PAGINA ENTREGAS */
+
+.entregas__titulo{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #ffe4c4;
+    margin-bottom: 30px;
+    font-family: 'Anton', sans-serif;
+    border: 3px solid black;
+    box-shadow: 4px 4px 38px -7px rgba(0,0,0,0.75);
+}
+.contenedor__entregas{
+    border: 2px black solid;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffe4c4b4;
+
+}
+.contenedor__entregas-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__entregas-texto h3{
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.contenedor__entregas-texto{
+    font-size:1.8rem;
+    font-family: 'Varela Round', sans-serif
+}
+
+.contenedor__entregas-mapa{
+    border: 6px solid black;
+    margin-top: 10px;
+    height: 100%;
 }
