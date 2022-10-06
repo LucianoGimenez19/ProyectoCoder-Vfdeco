@@ -1,0 +1,31 @@
+.productos__titulo{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #ffe4c4;
+    margin-bottom: 30px;
+    font-family: 'Anton', sans-serif;
+    border: 3px solid black;
+    box-shadow: 4px 4px 38px -7px rgba(0,0,0,0.75);
+}
+.productos__contenedor{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12 , 20%);
+    gap: 10px;
+    overflow-x: auto;
+    &-colgantes{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(7 , 20%);
+        gap: 10px;
+        overflow-x: auto;
+    }
+    &-cortinas{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(10 , 20%);
+        gap: 10px;
+        overflow-x: auto;
+    }
+}

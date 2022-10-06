@@ -1,0 +1,35 @@
+@media (max-width:768px){
+    .productos__contenedor{
+        display: grid;
+        grid-template-columns: repeat(12 , 50%);
+    }
+    .productos__contenedor-colgantes{
+        display: grid;
+        grid-template-columns: repeat(7 , 50%);
+    }
+    .productos__contenedor-cortinas{
+        display: grid;
+        grid-template-columns: repeat(10 , 50%);
+    }
+    .nosotras__text p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:480px){
+    .productos__contenedor{
+        display: grid;
+        grid-template-columns: repeat(12 , 100%);
+    }
+    .productos__contenedor-colgantes{
+        display: grid;
+        grid-template-columns: repeat(7 , 100%)
+    } 
+    .productos__contenedor-cortinas{
+        display: grid;
+        grid-template-columns: repeat(10 , 100%);
+    }
+    .nosotras__text p{
+        font-size: 1.3rem;
+    }
+}

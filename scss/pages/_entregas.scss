@@ -1,0 +1,35 @@
+.entregas__titulo{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #ffe4c4;
+    margin-bottom: 30px;
+    font-family: 'Anton', sans-serif;
+    border: 3px solid black;
+    box-shadow: 4px 4px 38px -7px rgba(0,0,0,0.75);
+}
+.contenedor__entregas{
+    border: 2px black solid;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffe4c4b4;
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size:1.8rem;
+        font-family: 'Varela Round', sans-serif
+        }
+        &-mapa{
+            border: 6px solid black;
+            margin-top: 10px;
+            height: 100%;
+        }
+    }
+.contenedor__entregas-texto h3{
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}

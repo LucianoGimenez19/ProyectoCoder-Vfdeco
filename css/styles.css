@@ -1,402 +1,400 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a { 
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-/* HEADER {}*/
+@media (max-width: 768px) {
+  .productos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(12, 50%);
+  }
+  .productos__contenedor-colgantes {
+    display: grid;
+    grid-template-columns: repeat(7, 50%);
+  }
+  .productos__contenedor-cortinas {
+    display: grid;
+    grid-template-columns: repeat(10, 50%);
+  }
+  .nosotras__text p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .productos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(12, 100%);
+  }
+  .productos__contenedor-colgantes {
+    display: grid;
+    grid-template-columns: repeat(7, 100%);
+  }
+  .productos__contenedor-cortinas {
+    display: grid;
+    grid-template-columns: repeat(10, 100%);
+  }
+  .nosotras__text p {
+    font-size: 1.3rem;
+  }
+}
 .logo {
-    width: 20%;
-    border: solid 2px black;
-    border-radius: 20px;
- }
+  width: 20%;
+  border: solid 2px black;
+  border-radius: 20px;
+}
 
-
- .header { 
-    background-color: #ffe4c4a9;
-    padding: 15px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
- }
+.header {
+  background-color: rgba(255, 228, 196, 0.662745098);
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: black;
-    font-size: 1.4rem;
-    font-family: 'Anton', sans-serif;
-    margin: 5px;   
- }
+  color: black;
+  font-size: 1.4rem;
+  font-family: "Anton", sans-serif;
+  margin: 5px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: SlateBlue;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
 
- .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color:SlateBlue ;
-    font-size:1.5rem ;
-    transition: 0.5s;
-    
- }
-
- .sub-menu { 
-    background-color: #ece6dff9;
- }
+.sub-menu {
+  background-color: rgba(236, 230, 223, 0.9764705882);
+}
 
 .dropdown-item {
-    font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-
-
 .dropdown-item:hover {
-    color:SlateBlue ;
-    font-size:1.2rem ;
-    transition: 0.5s;
+  color: SlateBlue;
+  font-size: 1.2rem;
+  transition: 0.5s;
 }
 
- /* MAIN HERO */
- .hero {
-    height: 98vh;
-    background-image: url(../assets/img/fondo.index.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-paginas {
+  background-color: rgba(255, 228, 196, 0.7058823529);
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: solid 2px black;
 }
-
-.hero__text { 
-    text-align: center;
-}
-.hero__text h1 {
-    font-family: 'Pacifico', cursive;
-    text-decoration: underline;
-    font-size: 3.5rem;
-}
-
-.hero__text h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-}
-
-.presentacion-productos { 
-    background-color: #ffe4c4b4;
-    text-align: center;
-    padding: 20px;
-  
-}
-
-.presentacion-productos__img {
-    border: 2px black solid;
-}
-
-.presentacion-productos__img:hover {
-    box-shadow: 9px 7px 44px 3px rgba(0,0,0,0.69);
-    transition: 1s;
-  
-}
-
-.presentacion-productos__text { 
-    font-size: 2rem;
-    font-family: 'Anton', sans-serif;
-}
-
-/* FOOTER */
 
 footer {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    text-align: center;
-    background-color: #ffe4c4b4;
-    border: solid 3px black;
-}
- .redes{
-    margin: 20px;
-} 
-.redes__texto{
-    margin: 10px;
-    font-family: 'Anton', sans-serif;
-    text-decoration: underline;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  text-align: center;
+  background-color: rgba(255, 228, 196, 0.7058823529);
+  border: solid 3px black;
 }
 
+.redes {
+  margin: 20px;
+}
+.redes__texto {
+  margin: 10px;
+  font-family: "Anton", sans-serif;
+  text-decoration: underline;
+}
 .redes__img {
-    width: 15%;
-    height: 40%;
+  width: 15%;
+  height: 40%;
 }
 
-.mapa{
-    width: 100%;
-    height: 40%;
-}
-
-/* NOSOTRAS */
-
-.nosotras {
-    height: 98vh;
-    background-image: url(../assets/img/fondonosotras.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-} 
-.header-paginas{
-    background-color: #ffe4c4b4;
-    padding: 15px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border: solid 2px black;
-}
-
-.nosotras__text {
-    text-align: center;
-    width: 100%;
-    border: 2px black solid;
-}
-
-.nosotras__text h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.nosotras__text p {
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-}
-.nosotras__text p span {
-    color: sandybrown;
-    text-decoration: underline;
-}
-
-
-
- /* PAGINA PRODUCTOS */
-
-.productos__titulo {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 3rem;
-    background-color: #ffe4c4;
-    margin-bottom: 30px;
-    font-family: 'Anton', sans-serif;
-    border: 3px solid black;
-    box-shadow: 4px 4px 38px -7px rgba(0,0,0,0.75);
-}
-
-.productos__contenedor {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(12 , 20%);
-    gap: 10px;
-    overflow-x: auto;
-}
-
-.productos__contenedor-colgantes {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(7 , 20%);
-    gap: 10px;
-    overflow-x: auto;
-}
-
-.productos__contenedor-cortinas {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(10 , 20%);
-    gap: 10px;
-    overflow-x: auto;
+.mapa {
+  width: 100%;
+  height: 40%;
 }
 
 .tarjeta {
-    width:100%;
-    height: 100%;
-    background-color: blanchedalmond;
-    border: solid 2px black;
-    border-radius: 20px;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: blanchedalmond;
+  border: solid 2px black;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .tarjeta__img {
-    width: 100%;
-    height: 100%;
-    border: solid 2px black;
+  width: 100%;
+  height: 100%;
+  border: solid 2px black;
 }
-
 .tarjeta__precio {
-    text-align: center;
-    padding: 10px;
-    color: grey;
-    font-size: 25px;
-    text-decoration: underline;
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
+  text-align: center;
+  padding: 10px;
+  color: grey;
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
 }
-
 .tarjeta__boton {
-    padding: 10px 15px;
-    background-color: grey;
-    color: black;
-    font-size: 1rem;
-    border-radius: 20px;
-    border: 1px black solid;
+  padding: 10px 15px;
+  background-color: grey;
+  color: black;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px black solid;
 }
-
 .tarjeta__boton:hover {
-    background-color: black;
-    border: 3px solid white;
-    color: white;
-    font-size:1.2rem;
-    transition: 0.5s;
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.5s;
 }
 
-@media (max-width:768px){
-
-    .productos__contenedor {
-        display: grid;
-        grid-template-columns: repeat(12 , 50%);
-    }
-    .productos__contenedor-colgantes {
-
-        display: grid;
-        grid-template-columns: repeat(7 , 50%);
-
-    }
-    
-    .productos__contenedor-cortinas {
-        display: grid;
-        grid-template-columns: repeat(10 , 50%);
-    }
+.hero {
+  height: 98vh;
+  background-image: url(../assets/img/fondo.index.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text {
+  text-align: center;
+}
+.hero__text h1 {
+  font-family: "Pacifico", cursive;
+  text-decoration: underline;
+  font-size: 3.5rem;
+}
+.hero__text h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
 }
 
-@media (max-width:480px) {
-
-    .productos__contenedor {
-        display: grid;
-        grid-template-columns: repeat(12 , 100%);}
-
-    .productos__contenedor-colgantes {
-
-        display: grid;
-        grid-template-columns: repeat(7 , 100%)}
-    
-    .productos__contenedor-cortinas {
-        display: grid;
-        grid-template-columns: repeat(10 , 100%);
-    }
+.presentacion-productos {
+  background-color: rgba(255, 228, 196, 0.7058823529);
+  text-align: center;
+  padding: 20px;
+}
+.presentacion-productos__img {
+  border: 2px black solid;
+}
+.presentacion-productos__img:hover {
+  box-shadow: 9px 7px 44px 3px rgba(0, 0, 0, 0.69);
+  transition: 1s;
+}
+.presentacion-productos__text {
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
 }
 
-/* PAGINA CONTACTOS */
+.nosotras {
+  height: 98vh;
+  background-image: url(../assets/img/fondonosotras.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.nosotras__text {
+  text-align: center;
+  width: 100%;
+  border: 2px black solid;
+}
+.nosotras__text h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.nosotras__text p {
+  margin-top: 10px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.nosotras__text p span {
+  color: sandybrown;
+  text-decoration: underline;
+}
+
+.productos__titulo {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #ffe4c4;
+  margin-bottom: 30px;
+  font-family: "Anton", sans-serif;
+  border: 3px solid black;
+  box-shadow: 4px 4px 38px -7px rgba(0, 0, 0, 0.75);
+}
+
+.productos__contenedor {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 20%);
+  gap: 10px;
+  overflow-x: auto;
+}
+.productos__contenedor-colgantes {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 20%);
+  gap: 10px;
+  overflow-x: auto;
+}
+.productos__contenedor-cortinas {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 20%);
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.entregas__titulo {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #ffe4c4;
+  margin-bottom: 30px;
+  font-family: "Anton", sans-serif;
+  border: 3px solid black;
+  box-shadow: 4px 4px 38px -7px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor__entregas {
+  border: 2px black solid;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(255, 228, 196, 0.7058823529);
+}
+.contenedor__entregas-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Varela Round", sans-serif;
+}
+.contenedor__entregas-mapa {
+  border: 6px solid black;
+  margin-top: 10px;
+  height: 100%;
+}
+
+.contenedor__entregas-texto h3 {
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
 
 .contacto__titulo {
-text-align: center;
-font-size: 3.5rem;
-padding: 20px;
-text-decoration: underline;
-font-family: 'Pacifico', cursive;
-}
-.contenedor__contacto{
-    border: solid black 3px;
-    border-radius: 20px;
-    box-shadow: -5px 1px 50px 8px rgba(238,245,171,1);
-    margin-top: 20px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 20px;
+  text-decoration: underline;
+  font-family: "Pacifico", cursive;
 }
 
-input{
-    border: solid 2px black;
-    font-size: 2rem;
-    display: flex;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #ffe4c4;
-    justify-content: center;
-    font-family: 'Anton', sans-serif;
+.contenedor__contacto {
+  border: solid black 3px;
+  border-radius: 20px;
+  box-shadow: -5px 1px 50px 8px rgb(238, 245, 171);
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-textarea{
-    background-color: #ffe4c4;
-    border: 2px black solid;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
+input {
+  border: solid 2px black;
+  font-size: 2rem;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffe4c4;
+  justify-content: center;
+  font-family: "Anton", sans-serif;
+}
+
+textarea {
+  background-color: #ffe4c4;
+  border: 2px black solid;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 label {
-    font-size: 2rem;
-    text-decoration: underline;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  font-family: "Anton", sans-serif;
 }
 
 form span {
-    font-size: 2.2rem;
-    font-family: 'Anton', sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-family: "Anton", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.formulario{
-    margin-top: 20px;
+.formulario {
+  margin-top: 20px;
 }
 
-/* PAGINA ENTREGAS */
-
-.entregas__titulo{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 3rem;
-    background-color: #ffe4c4;
-    margin-bottom: 30px;
-    font-family: 'Anton', sans-serif;
-    border: 3px solid black;
-    box-shadow: 4px 4px 38px -7px rgba(0,0,0,0.75);
+@media (max-width: 768px) {
+  .productos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(12, 50%);
+  }
+  .productos__contenedor-colgantes {
+    display: grid;
+    grid-template-columns: repeat(7, 50%);
+  }
+  .productos__contenedor-cortinas {
+    display: grid;
+    grid-template-columns: repeat(10, 50%);
+  }
+  .nosotras__text p {
+    font-size: 1.5rem;
+  }
 }
-.contenedor__entregas{
-    border: 2px black solid;
-    margin-top: 20px;
-    text-align: center;
-    background-color: #ffe4c4b4;
-
-}
-.contenedor__entregas-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor__entregas-texto h3{
-    font-size: 3rem;
-    font-family: 'Anton', sans-serif;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
-.contenedor__entregas-texto{
-    font-size:1.8rem;
-    font-family: 'Varela Round', sans-serif
+@media (max-width: 480px) {
+  .productos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(12, 100%);
+  }
+  .productos__contenedor-colgantes {
+    display: grid;
+    grid-template-columns: repeat(7, 100%);
+  }
+  .productos__contenedor-cortinas {
+    display: grid;
+    grid-template-columns: repeat(10, 100%);
+  }
+  .nosotras__text p {
+    font-size: 1.3rem;
+  }
 }
 
-.contenedor__entregas-mapa{
-    border: 6px solid black;
-    margin-top: 10px;
-    height: 100%;
-}
+/*# sourceMappingURL=styles.css.map */

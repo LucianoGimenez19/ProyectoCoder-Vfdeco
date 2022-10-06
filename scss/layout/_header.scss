@@ -1,0 +1,46 @@
+.logo{
+    width: 20%;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+.header{
+    background-color: #ffe4c4a9;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Anton', sans-serif;
+    margin: 5px;
+    &:hover{
+    color:SlateBlue ;
+    font-size:1.5rem ;
+    transition: 0.5s;
+    }
+}
+.sub-menu{
+    background-color: #ece6dff9;
+}
+.dropdown-item {
+    font-family: 'Anton', sans-serif;
+    &:hover{
+    color:SlateBlue ;
+    font-size:1.2rem ;
+    transition: 0.5s;
+    }
+}
+
+.header-paginas{
+    background-color: #ffe4c4b4;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: solid 2px black;
+}
