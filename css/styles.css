@@ -42,6 +42,46 @@ a {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 480px) {
+  .contacto__titulo {
+    font-size: 3rem;
+  }
+  .formulario__texto {
+    font-size: 1.5rem;
+  }
+  .formulario__input {
+    width: 60%;
+    height: 70px;
+  }
+  .formulario__inputarea {
+    width: 60%;
+    height: 120px;
+  }
+  .contenedor__contacto {
+    box-shadow: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .presentacion-productos {
+    margin-top: 10px;
+  }
+  .presentacion-productos__img {
+    margin-bottom: 10px;
+  }
+  .entregas__titulo {
+    font-size: 2rem;
+  }
+  .contenedor__entregas-texto {
+    font-size: 1.2rem;
+  }
+  .contenedor__entregas-texto h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+}
 .logo {
   width: 20%;
   border: solid 2px black;
@@ -84,7 +124,7 @@ a {
 }
 
 .header-paginas {
-  background-color: rgba(255, 228, 196, 0.7058823529);
+  background-color: #ffe4c4;
   padding: 15px;
   align-items: center;
   display: flex;
@@ -98,7 +138,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   text-align: center;
-  background-color: rgba(255, 228, 196, 0.7058823529);
+  background-color: #ffe4c4;
   border: solid 3px black;
 }
 
@@ -123,7 +163,7 @@ footer {
 .tarjeta {
   width: 100%;
   height: 100%;
-  background-color: blanchedalmond;
+  background-color: #ffe4c4;
   border: solid 2px black;
   border-radius: 20px;
   padding: 20px;
@@ -186,11 +226,12 @@ footer {
 }
 
 .presentacion-productos {
-  background-color: rgba(255, 228, 196, 0.7058823529);
+  background-color: #ffe4c4;
   text-align: center;
   padding: 20px;
 }
 .presentacion-productos__img {
+  border-radius: 20px;
   border: 2px black solid;
 }
 .presentacion-productos__img:hover {
@@ -242,6 +283,7 @@ footer {
   background-color: #ffe4c4;
   margin-bottom: 30px;
   font-family: "Anton", sans-serif;
+  border-radius: 20px;
   border: 3px solid black;
   box-shadow: 4px 4px 38px -7px rgba(0, 0, 0, 0.75);
 }
@@ -276,6 +318,7 @@ footer {
   margin-bottom: 30px;
   font-family: "Anton", sans-serif;
   border: 3px solid black;
+  border-radius: 20px;
   box-shadow: 4px 4px 38px -7px rgba(0, 0, 0, 0.75);
 }
 
@@ -283,7 +326,7 @@ footer {
   border: 2px black solid;
   margin-top: 20px;
   text-align: center;
-  background-color: rgba(255, 228, 196, 0.7058823529);
+  background-color: #ffe4c4;
 }
 .contenedor__entregas-texto {
   display: flex;
@@ -394,6 +437,46 @@ form span {
   }
   .nosotras__text p {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .contacto__titulo {
+    font-size: 3rem;
+  }
+  .formulario__texto {
+    font-size: 1.5rem;
+  }
+  .formulario__input {
+    width: 60%;
+    height: 70px;
+  }
+  .formulario__inputarea {
+    width: 60%;
+    height: 120px;
+  }
+  .contenedor__contacto {
+    box-shadow: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .presentacion-productos {
+    margin-top: 10px;
+  }
+  .presentacion-productos__img {
+    margin-bottom: 10px;
+  }
+  .entregas__titulo {
+    font-size: 2rem;
+  }
+  .contenedor__entregas-texto {
+    font-size: 1.2rem;
+  }
+  .contenedor__entregas-texto h3 {
+    font-size: 2rem;
+    margin-top: 10px;
   }
 }
 

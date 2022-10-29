@@ -3,7 +3,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 33%);
     text-align: center;
-    background-color: #ffe4c4b4;
+    background-color: $colorprincipal;
     border: solid 3px black;
 }
 .redes{

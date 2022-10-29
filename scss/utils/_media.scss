@@ -33,3 +33,52 @@
         font-size: 1.3rem;
     }
 }
+
+@media (max-width:480px){
+    .contacto__titulo{
+        font-size: 3rem;
+    }
+
+    .formulario__texto{
+        font-size: 1.5rem;
+    }
+    .formulario__input{
+        width: 60%;
+        height: 70px;
+    }
+    .formulario__inputarea{
+        width: 60%;
+        height: 120px
+    }
+
+    .contenedor__contacto{
+        box-shadow: none;
+    }
+}
+    
+@media (max-width:480px){
+    .hero__text h1{
+        font-size: 3rem;
+    }
+
+    .presentacion-productos{
+        margin-top:10px;
+    }
+
+    .presentacion-productos__img{
+        margin-bottom:10px;
+    }
+    .entregas__titulo{
+        font-size: 2rem;
+    }
+
+    .contenedor__entregas-texto{
+        font-size: 1.2rem;
+    }
+
+    .contenedor__entregas-texto h3{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+}
+

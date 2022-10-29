@@ -21,10 +21,11 @@
     }
 }
 .presentacion-productos{
-    background-color: #ffe4c4b4;
+    background-color: $colorprincipal;
     text-align: center;
     padding: 20px;
     &__img{
+        border-radius: 20px;
         border: 2px black solid;
         &:hover{
             box-shadow: 9px 7px 44px 3px rgba(0,0,0,0.69);
@@ -33,6 +34,6 @@
     }
     &__text{
         font-size: 2rem;
-        font-family: 'Anton', sans-serif;
+        font-family: $fuentetitulos;
     }
 }
